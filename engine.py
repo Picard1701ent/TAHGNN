@@ -8,7 +8,7 @@ from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import DataLoader, TensorDataset
 
 import config
-from models.model import AHGNN
+from models.model import TAHGNN
 from utils import load_data
 
 cfg = SimpleNamespace(**vars(config))
@@ -145,7 +145,7 @@ def train():
         val_subset = torch.utils.data.Subset(dataset, val_idx)
         train_loader = DataLoader(train_subset, batch_size=cfg.batch_size, shuffle=True)
         val_loader = DataLoader(val_subset, batch_size=cfg.batch_size, shuffle=True)
-        model = AHGNN()
+        model = TAHGNN()
         loss_func = torch.nn.NLLLoss(reduction="mean")
         optimizer = torch.optim.AdamW(
             model.parameters(),
