@@ -1,8 +1,13 @@
 # TAHGNN
 
-This repository contains the code of TAHGNN. 
+This repository contains the code for **TAHGNN** (Temporal-Aware Heterogeneous Graph Neural Network).
 
-The 'engine.py' contains the functions for training and evaluating. 
-The 'utils.py' contains the functions for loading the dataset and preprocessing the feature. 
+## Files Overview
 
-The model's architechture is contained in folder "models". The 'model.py' file has the overall architechture of TAHGNN. The 'TAHGNN.py' file has the TAHGConv layer，and utils.py' in this folder contains a MLP. 
+- **engine.py**: Contains functions for training and evaluating the model.
+- **utils.py**: Includes functions for loading datasets and preprocessing features.
+- **models/**: This folder contains the architecture of the TAHGNN model.
+  - **model.py**: Defines the overall architecture of TAHGNN.
+  - **TAHGNN.py**: Implements the TAHGConv layer.
+  - **utils.py**: Implements a Multi-Layer Perceptron (MLP).
+
