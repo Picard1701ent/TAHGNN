@@ -1,6 +1,6 @@
 # TAHGNN
 
-This repository contains the code for **TAHGNN** (Temporal-Aware Heterogeneous Graph Neural Network).
+This repository contains the code for **TAHGNN** (Topology-Aware Hypergraph Neural Network).
 
 ## Files Overview
 
